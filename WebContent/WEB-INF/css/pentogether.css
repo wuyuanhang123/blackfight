@@ -8,7 +8,7 @@
 	margin-right:5px;
 }
 .chat{
-	position: relative;
+    overflow-x:hidden;
 	overflow-y:auto; width:700px; height:700px;
 	border:1px solid #C0C0C0;
 	height: 350px;
@@ -43,6 +43,7 @@
 	border:1px solid #C0C0C0;
 	height:110px;
 	width:200px;
+	background: #668bcb;
 }
 .list-group{
 	width:200px;
@@ -55,4 +56,77 @@
 	width:20px;
 	heigth:25px;
 	margin-right: 5px;
+}
+.pictureleft{
+	width:30px;
+	heigth:30px;
+	margin-right:5px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.pictureright{
+	width:30px;
+	heigth:30px;
+	margin-top: 10px;
+
+
+}
+.itemleft {
+	margin-top: 10px;
+	position: relative;
+	width: 150px;
+	min-height: 50px;
+	background: #25a23b;
+	border-radius: 5px;
+	line-height: 50px;
+    margin-left: -10px;
+	word-break: break-all;
+	color: white;
+	padding: 5px;
+	line-height: 18px;
+}
+.itemleft::after {
+	margin-top: 10px;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-right-color: #25a23b;
+	top: 15px;
+	left: -16px;
+}
+.itemright {
+	margin-top: 10px;
+	position: relative;
+	width: 150px;
+	min-height: 50px;
+	background: #3366CC;
+	border-radius: 5px;
+	line-height: 50px;
+	margin-left: 495px;
+	word-break: break-all;
+	color: white;
+	padding: 5px;
+	line-height: 18px;
+}
+.itemright::after {
+	margin-top: 10px;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-left-color: #3366CC;
+	top: 15px;
+	left: 150px;
+}
+
+.chattext{
+	font-size:5px
+}
+.logintext{
+	margin-left: 230px;
 }
